@@ -1,0 +1,86 @@
+.body{
+    background-color: rgb(160, 235, 238);
+}
+.background{
+    background-image: url("../img/header_background_image1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.land-text{
+    text-decoration:none;
+    color:whitesmoke;
+    text-align: center;
+    font-size: 52;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-top: 7%;
+}
+.user-text{
+    text-decoration:none;
+    color:rgb(178, 255, 219);
+    font-size: 24;
+
+}
+.student-text{
+    flex-basis: 50%;
+}
+.lecturer-text{
+    flex-basis: 40%;
+}
+.answers-text{
+    display: flex;
+    flex-direction: row;
+}
+.wrap-text{
+    flex-wrap: wrap;
+}
+.download-button{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 2%;
+    align-items: baseline;
+}
+.d-button{
+    border-radius: 10px;
+    zoom: 1.5;
+    background:repeating-linear-gradient(100deg, rgb(40, 183, 164), rgb(116, 239, 131));
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 112, 76);
+    border: 1px solid  rgb(6, 155, 100);
+}
+.prebutton-text{
+    margin-right: 1%;
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
+}
+.pre-content-li-text{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+.content-text{
+    font-size: 10;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 10%;
+    text-decoration:none;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+.content-li{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.content-div{
+    font-size: 30px;
+}
