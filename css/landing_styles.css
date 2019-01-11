@@ -90,16 +90,32 @@ siteLink:link {
   }
   
   /* visited link */
-  siteLink:visited {
+siteLink:visited {
     color: green;
   }
   
   /* mouse over link */
-  siteLink:hover {
+siteLink:hover {
     color: hotpink;
   }
   
   /* selected link */
-  siteLink:active {
+siteLink:active {
     color: blue;
   }
+.footer{
+      margin-top: 2%;
+      display: flex;
+      flex-direction: row;
+      background: rgba(240, 248, 255, .3);
+  }
+.footer-asoiu{
+      width: 33%;
+}
+.footer-foreign{
+    width: 33%;
+}
+.footer-author{
+    width: 100%;
+    text-align: end;
+}
