@@ -84,3 +84,22 @@
 .content-div{
     font-size: 30px;
 }
+/* unvisited link */
+siteLink:link {
+    color: rgb(230, 230, 230);
+  }
+  
+  /* visited link */
+  siteLink:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  siteLink:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  siteLink:active {
+    color: blue;
+  }
