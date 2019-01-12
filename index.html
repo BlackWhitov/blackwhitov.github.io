@@ -1,15 +1,26 @@
 <html>
 
 <head>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+
+    <script type="text/javascript">
+        VK.init({ apiId: 6815990, onlyWidgets: true });
+    </script>
+    <script src="//connect.mail.ru/js/loader.js" title="mail.ru library link"></script>
+    <script>
+        mailru.loader.require('receiver', function () {
+            mailru.receiver.init();
+        })
+    </script>
     <title>UniLand</title>
     <meta charset="utf-8">
     <meta name="description" content="сайт помощник для студентов и преподавателей ОмГТУ">
     <meta name="keywords" content="UniLand,ОмГТУ,Преподаватель,Студент">
     <meta name="author" content="Black Whitov">
-    <link rel="author" href="https://plus.google.com/u/0/103554916852638943381"/>
+    <link rel="author" href="https://plus.google.com/u/0/103554916852638943381" / title="author google profile">
     <meta name="google-site-verification" content="7m3dBxdniQKiD0S8SP-odP2r9wDgJ5d7J_nI6HC1p-A" />
-    <link rel="stylesheet" href="../hostsite/css/landing_styles.css">
-    
+    <link rel="stylesheet" href="../css/landing_styles.css" title="styles link">
+
 
 </head>
 
@@ -44,7 +55,8 @@
             <li class="content-li">Настраиваимые оповещения от Google Calendar </li>
             <div class="content-div">Оповещения полученные от Google Calendar помогут быть в курсе пар.</div>
             <li class="content-li">Обновление расписания</li>
-            <div class="content-div"> Регулярное обновление расписание в Google Calendar позволит вам всегда знать об изменении в расписании и не пропускать нежданные пары.</div>
+            <div class="content-div"> Регулярное обновление расписание в Google Calendar позволит вам всегда знать об изменении
+                в расписании и не пропускать нежданные пары.</div>
         </ul>
         Всё это и не только позволит Вам всегда помнить о парах и не пропускать их.
     </div>
@@ -54,40 +66,72 @@
     <div>
         <div class="download-button">
             <div class="prebutton-text">Хочешь начать пользоваться?</div>
-            <a class="siteLink" href="https://blackwhitov.github.io/index.html">UniLand</a>
+            <a class="siteLink" href="https://blackwhitov.github.io/index.html" title="UniLand site link">UniLand</a>
         </div>
     </div>
     <footer class="footer">
         <div class="footer-asoiu">
             <!-- begin ASOIU -->
-            <a href="http://asoiu.com/"title="Официальный сайт кафедры АСОИУ ОмГТУ">Кафедра АСОИУ</a>
+            <a href="http://asoiu.com/" title="Официальный сайт кафедры АСОИУ ОмГТУ">Кафедра АСОИУ</a>
             <!-- end ASOIU -->
         </div>
-        <div class="footer-author">
-            <!--LiveInternet counter--><script type="text/javascript">
-            document.write("<a href='//www.liveinternet.ru/click' "+
-            "target=_blank><img src='//counter.yadro.ru/hit?t26.6;r"+
-            escape(document.referrer)+((typeof(screen)=="undefined")?"":
-            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-            screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-            ";h"+escape(document.title.substring(0,150))+";"+Math.random()+
-            "' alt='' title='LiveInternet: number of visitors for today is"+
-            " shown' "+
-            "border='0' width='88' height='15'><\/a>")
-            </script><!--/LiveInternet-->
+        <div class="footer-foreigns">
+            <div>
+                <!-- vk integration begin-->
+                <div id="vk_like"></div>
+                <script type="text/javascript">
+                    VK.Widgets.Like("vk_like", { type: "button", height: 24 });
+                </script>
+                <!-- vk integration end-->
+            </div>
+            <div>
+                <!-- ok integration begin-->
+                <div id="ok_shareWidget"></div>
+                <script>
+                    !function (d, id, did, st, title, description, image) {
+                        var js = d.createElement("script");
+                        js.src = "https://connect.ok.ru/connect.js";
+                        js.onload = js.onreadystatechange = function () {
+                            if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                                if (!this.executed) {
+                                    this.executed = true;
+                                    setTimeout(function () {
+                                        OK.CONNECT.insertShareWidget(id, did, st, title, description, image);
+                                    }, 0);
+                                }
+                            }
+                        };
+                        d.documentElement.appendChild(js);
+                    }(document, "ok_shareWidget", "https://blackwhitov.github.io", '{"sz":20,"st":"rounded","ck":2,"lang":"ru"}', "", "", "");
+                </script>
+                <!-- ok integration end-->
+            </div>
+            <!--LiveInternet counter-->
+            <script type="text/javascript">
+                document.write("<a href='//www.liveinternet.ru/click' " +
+                    "target=_blank><img src='//counter.yadro.ru/hit?t26.6;r" +
+                    escape(document.referrer) + ((typeof (screen) == "undefined") ? "" :
+                        ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                            screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+                    ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() +
+                    "' alt='' title='LiveInternet: number of visitors for today is" +
+                    " shown' " +
+                    "border='0' width='88' height='15'><\/a>")
+            </script>
+            <!--/LiveInternet-->
         </div>
         <div class="footer-author vcard">
             <span class="fn">John Doe</span>
             <div class="org">UniLand corp.</div>
-            <a class="email" href="mailto:JohnUnknownDoe228@gmail.com">
+            <a class="email" href="mailto:JohnUnknownDoe228@gmail.com" title="author email">
                 JohnUnknownDoe228@gmail.com
             </a>
             <div class="adr">
-            <div class="street-address">71 Grand St</div>
-            <span class="locality">Manhattan</span>, 
-            <span class="region">NY</span>, 
-            <span class="postal-code">11211</span>
-            <span class="country-name">USA</span>
+                <div class="street-address">71 Grand St</div>
+                <span class="locality">Manhattan</span>,
+                <span class="region">NY</span>,
+                <span class="postal-code">11211</span>
+                <span class="country-name">USA</span>
             </div>
         </div>
     </footer>
